@@ -1,4 +1,11 @@
-html{
-    background-color: lavenderblush;
-    margin: 10rem;
+@use "variables/fuentes" as f;
+@use "variables/colors" as c;
+
+
+html {
+    font-family: f.$fuentePrincipal;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: c.$negro;
 }
+
