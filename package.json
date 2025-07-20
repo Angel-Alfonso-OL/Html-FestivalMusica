@@ -2,15 +2,17 @@
   "name": "04_festivalmusica",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "sass": "sass --watch src/scss:build/css",
-    "autoSaas": "gulp autoSaas"
+    "autoCss": "gulp dev"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.89.2"
   }
 }
