@@ -1,6 +1,14 @@
 @use "base/variables" as v;
+@use "base/mixins" as m;
 
 .header {
+    background-color: v.$verde;
+
+    @include m.telefono{
+       color: v.$blanco;
+       width: 10px;
+       height: 1px;
+    }
 
     .contenido-header {
         padding: 2rem;
@@ -8,8 +16,6 @@
         justify-content: space-between;
         align-items: center;
     }
-
-    background-color: v.$verde;
 
     h1 {
         color: v.$blanco;
