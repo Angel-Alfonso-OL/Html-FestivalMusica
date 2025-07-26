@@ -4,10 +4,28 @@
 .header {
     background-color: v.$verde;
 
-    @include m.telefono{
-       color: v.$blanco;
-       width: 10px;
-       height: 1px;
+    @include m.telefono {
+        color: v.$blanco;
+        width: 10px;
+        height: 1px;
+    }
+
+    @include m.tablet {
+        color: v.$blanco;
+        width: 10px;
+        height: 1px;
+    }
+
+    @include m.desktop {
+        color: v.$blanco;
+        width: 10px;
+        height: 1px;
+    }
+
+    @include m.desktopXL {
+        color: v.$blanco;
+        width: 10px;
+        height: 1px;
     }
 
     .contenido-header {
