@@ -552,7 +552,7 @@ body > section {
 
 .sobre-festival .contenedor {
   width: 95%;
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -587,10 +587,8 @@ body > section {
   text-transform: uppercase;
 }
 
-.escenarios-contenedor .contenedor {
-  width: 95%;
-  max-width: 120rem;
-  margin: 0 auto;
+.escenarios-contenedor {
+  /*@include m.contenedor;*/
 }
 @media (min-width: 768px) {
   .escenarios-contenedor {
@@ -598,4 +596,42 @@ body > section {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
   }
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario .nombre-escenario {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: rgb(255, 226.5019762846, 49);
+}
+
+.bg-verde {
+  background-color: #4CB8B3;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: rgb(112.516, 198.484, 194.504);
 }

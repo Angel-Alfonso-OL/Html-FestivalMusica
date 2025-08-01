@@ -27,7 +27,7 @@
 @mixin contenedor {
     .contenedor {
         width: 95%;
-        max-width: 120rem;
+        max-width: 100rem;
         margin: 0 auto;
     }
 }
@@ -36,4 +36,10 @@
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $gap;
+}
+
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
