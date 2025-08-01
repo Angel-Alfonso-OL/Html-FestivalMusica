@@ -587,8 +587,10 @@ body > section {
   text-transform: uppercase;
 }
 
-.escenarios-contenedor {
-  /*@include m.contenedor;*/
+.escenarios-contenedor .contenedor {
+  width: 95%;
+  max-width: 100rem;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .escenarios-contenedor {
