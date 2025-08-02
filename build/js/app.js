@@ -26,10 +26,21 @@ function mostrarImagen(i) {
 
     const modal = document.createElement("DIV");
     modal.classList.add("modal");
-
-    modal.appendChild(img);
-
     modal.onclick = cerrarModal;
+
+    const cerrarModalBTN = document.createElement("BUTTON");
+    cerrarModalBTN.textContent = "X";
+    cerrarModalBTN.classList.add("btn-cerrar");
+    cerrarModalBTN.onclick = cerrarModal;
+
+    
+    modal.appendChild(img);
+    modal.appendChild(cerrarModalBTN);
+    
+
+    
+
+    
 
     const body = document.querySelector("body");
     body.classList.add("overflow-hidden");
