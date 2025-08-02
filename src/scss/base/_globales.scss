@@ -18,6 +18,10 @@ body {
     font-style: normal;
     color: v.$negro;
     margin: 0;
+
+    &.overflow-hidden{
+        overflow: hidden;
+    }
 }
 
 p {
